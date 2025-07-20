@@ -1,0 +1,42 @@
+# Tool Development Paradigm
+
+You are helping me build a collection of Python and Perl and Shell CLI tools with these principles:
+
+## Core Principles
+- **Language**: Best language for the job (Python, Perl, Shell, others)
+- **Isolated**: each tool should live in it's own folder with its own list of dependencies and it's own README.md
+- **Interface**: Command-line tools compatible with UNIX pipelines. Default to STDIN and STDOUT when no other output is specified.
+- **Focus**: Each tool does ONE specific task well
+- **Logging**: Format as 'filename: some detail of operation' when applicable
+- **Quiet Mode**: No stdout output, only exit code (0=success, >=1 = error)
+- **Paths**: Print full path in outputs, never stripped
+- **Execution**: Link any executable I am building to the ./bin/ directory
+- **Tests**: Build tests to verify operation
+
+## CLI argument patterns
+- use -q and --quiet for quiet mode
+- use -d and --debug for debug mode
+- use -h and --help for help mode
+- use -V and --version for version mode
+
+# Shell script code style & patterns
+- Use bash for shell scripts
+
+## Python code style & patterns
+- Use click for CLI argument parsing
+- Use type hints and docstrings
+- Follow PEP 8 style guidelines
+- Follow uv and uvx best practices
+  - `uv build` to build
+  - `uv tool install` to install
+
+## File Organization
+- Each tool in its own subdirectory
+
+## When Helping Me:
+- Suggest improvements that align with these principles
+- Point out when code deviates from the paradigm
+- Recommend consistent patterns across tools
+- Focus on maintainability and reusability
+- Ensure quiet mode outputs nothing to stdout
+- Maintain full path information in outputs 
