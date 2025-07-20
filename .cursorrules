@@ -23,12 +23,23 @@ You are helping me build a collection of Python and Perl and Shell CLI tools wit
 - Use bash for shell scripts
 
 ## Python code style & patterns
-- Use click for CLI argument parsing
 - Use type hints and docstrings
 - Follow PEP 8 style guidelines
 - Follow uv and uvx best practices
   - `uv build` to build
   - `uv tool install` to install
+
+## Project Structure for Python tools:
+my-tool/
+├── pyproject.toml
+├── README.md
+├── src/
+│   └── my_tool/
+│       ├── __init__.py
+│       ├── main.py
+│       └── cli.py
+└── tests/
+    └── test_my_tool.py
 
 ## File Organization
 - Each tool in its own subdirectory
