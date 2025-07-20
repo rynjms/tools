@@ -1,0 +1,5 @@
+This is a test file for the sample tool.
+It contains multiple lines of text.
+The tool will process this file and output a score.
+This demonstrates the 'filename: score' output format.
+The tool supports different algorithms: size, lines, and words. 
